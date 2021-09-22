@@ -1,0 +1,74 @@
+.dashboard {
+  background-color: #fff;
+  header {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    overflow: hidden;
+    padding-left: 2rem;
+    img {
+      max-width: 100px;
+    }
+  }
+  aside {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 8;
+    overflow: hidden;
+    padding: 0 40px;
+    width: 300px;
+    transition: width 0.3s ease;
+    .menu {
+      width: 100%;
+      padding: 100px 0 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      &-item {
+        max-width: 100%;
+        width: 100%;
+        list-style: none;
+        padding: 0.3rem;
+        margin: 0.3rem 0;
+        .bi {
+          color: #7b22ec;
+          margin-right: 0.3rem;
+        }
+        a {
+          color: #7e8299;
+        }
+        &.active {
+          background-color: rgba(245, 248, 250, 0.8);
+        }
+      }
+    }
+  }
+  &-content {
+    position: relative;
+    z-index: 1;
+    background-color: #f5f8fa;
+    left: 300px;
+    width: calc(100vw - 332px);
+    height: calc(100vh - 90px);
+    margin-top: 90px;
+    padding: 2rem;
+    border-radius: 1.5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.ql-container {
+  min-height: 300px;
+}
